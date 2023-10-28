@@ -1,0 +1,115 @@
+.nav {
+  position: fixed;
+  top: 0;
+  padding: 10px 40px;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  transition: all 0.5s linear;
+}
+
+.nav__black {
+  background-color: rgb(25, 22, 22, 0.7);
+}
+
+.nav__contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  cursor: pointer;
+}
+
+.nav__logo > h1 {
+  color: red;
+  font-size: 36px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.nav__list > ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list > ul > li {
+  font-weight: 600;
+
+  color: #fff;
+  transition: all 0.05s ease-in;
+}
+
+.nav__list ul li:hover {
+  transform: scale(1.08);
+}
+
+.nav__list > ul > li > a {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.active__navlink {
+  background-color: rgba(251, 36, 16, 0.8);
+}
+
+.nav__button {
+  padding: 6px 10px;
+  font-size: 16px;
+  font-family: "PT Serif" "serif";
+  background-color: rgba(251, 36, 16, 0.8);
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 100ms linear;
+}
+
+.nav__button:hover {
+  transform: scale(1.06);
+}
+
+@media (max-width: 700px) {
+  .nav {
+    padding: 10px 20px;
+  }
+
+  .nav__list {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav {
+    padding: 10px;
+  }
+
+  .nav__logo > h1 {
+    font-size: 30px;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__list > ul > li > a {
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+
+  .nav__button {
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+}

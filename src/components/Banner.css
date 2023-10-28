@@ -1,0 +1,116 @@
+.sub__header {
+  height: 448px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  height: 448px;
+  position: relative;
+  color: white;
+  object-fit: contain;
+}
+
+.banner__contents {
+  margin-left: 30px;
+  padding-top: 140px;
+  position: relative;
+}
+
+.banner__title {
+  font-size: 43px;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner__description {
+  width: 600px;
+  line-height: 1.4;
+  padding-top: 20px;
+  font-size: 15px;
+  max-width: 430px;
+  letter-spacing: 1px;
+}
+
+.banner--fadeBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 7.4rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+}
+
+.banner__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(251, 36, 16, 0.8);
+  padding-bottom: 0.5rem;
+  font-family: "PT Serif";
+  letter-spacing: 1px;
+}
+
+.banner__button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
+
+@media (max-width: 900px) {
+  .banner__title {
+    font-size: 39px;
+  }
+
+  .banner__description {
+    width: 600px;
+    padding-top: 18px;
+    font-size: 14px;
+  }
+
+  .banner__button {
+    border-radius: 5px;
+    padding: 8px 18px;
+    margin-right: 16px;
+
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 780px) {
+  .banner {
+    height: 400px;
+  }
+}
+
+@media (max-width: 680px) {
+  .banner__description {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sub__header > h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner__description {
+    width: 300px;
+  }
+}

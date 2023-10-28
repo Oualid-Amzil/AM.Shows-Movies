@@ -1,0 +1,52 @@
+.row__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row__bar > h2 {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.row__bar > h2 > a > span {
+  font-size: 12px;
+  opacity: 0;
+}
+
+.row__bar > h2:hover {
+  color: red;
+}
+
+.row__bar > h2:hover > a > span {
+  opacity: 1;
+}
+
+.row__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.row__button {
+  padding: 2px 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.row__button:hover {
+  transform: scale(0.93);
+}
+
+.active__type {
+  transform: scaleX(0.86);
+  background-color: rgba(248, 202, 20, 0.8);
+  color: rgba(0, 0, 0, 1);
+}

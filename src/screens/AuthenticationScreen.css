@@ -1,0 +1,21 @@
+.auth__container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://static.standard.co.uk/2022/11/16/10/netflix-s.jpg?width=1200")
+    center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.auth__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
